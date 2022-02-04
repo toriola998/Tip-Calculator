@@ -190,8 +190,27 @@ h3 {
     }
 
     .results {
-        height: 25rem;
+        height: 27rem;
         margin: auto 0;
+        padding: 2rem;
     }
+
+    .res-info {
+        margin-bottom: 2.3rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }   
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 60%;
+        margin: auto;
+    }   
 }
 
