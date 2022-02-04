@@ -13,43 +13,45 @@
         </header>
         <main>
             <div class="container">
-                <div class="bill-select">
-                    <label for="bill">Bill</label><br>
-                    <div>
-                        <span>$</span>
-                        <input type="number" placeholder="0"/>
-                    </div>
-            
-                    <p>Select Tip %</p>
-                    <div>
-                        <button>5%</button>
-                        <button>10%</button>
-                        <button> 15%</button>
-                        <button>25%</button>
-                        <button>50%</button>
-                        <button>Custom</button>
+                <div>
+                    <div class="bill-select">
+                        <label for="bill">Bill</label><br>
+                        <div class="input-wrap flex">
+                            <span id="dollar">$</span>
+                            <input type="number" placeholder="0"/>
+                        </div>
+                
+                        <p id="select">Select Tip %</p>
+                        <div class="btn-wrap">
+                            <button class="btn">5%</button>
+                            <button class="btn">10%</button>
+                            <button class="btn"> 15%</button>
+                            <button class="btn">25%</button>
+                            <button class="btn">50%</button>
+                            <button>Custom</button>
+                        </div>
+                        
+                        <label>Number of People
+                        <input type="number"/>
                     </div>
                     
-                    <label>Number of People
-                    <input type="number"/>
-                </div>
-                
-                <div>
                     <div>
-                        <p>Tip Amount</p>
-                        <p>/ person</p>
+                        <div>
+                            <p>Tip Amount</p>
+                            <p>/ person</p>
+                        </div>
+                        <h3>$0.00</h3>
                     </div>
-                    <h3>$0.00</h3>
-                </div>
-                
-                <div>
+                    
                     <div>
-                        <p>Total</p>
-                        <p>/ person</p>
+                        <div>
+                            <p>Total</p>
+                            <p>/ person</p>
+                        </div>
+                        <h3>$0.00</h3>
                     </div>
-                    <h3>$0.00</h3>
+                    <button>Reset</button>
                 </div>
-                <button>Reset</button>
             </div>
         </main> 
     </body>
