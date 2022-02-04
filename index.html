@@ -28,29 +28,34 @@
                             <button class="btn"> 15%</button>
                             <button class="btn">25%</button>
                             <button class="btn">50%</button>
-                            <button>Custom</button>
+                            <button class="custom">Custom</button>
                         </div>
                         
-                        <label>Number of People
-                        <input type="number"/>
+                        <label for="number-of-people">Number of People</label><br>
+                        <div class="input-wrap flex">
+                            <img src="./images/icon-person.svg" alt="people"/>
+                            <input type="number" placeholder="0"/>
+                        </div>  
                     </div>
                     
-                    <div>
-                        <div>
-                            <p>Tip Amount</p>
-                            <p>/ person</p>
+                    <div class="results">
+                        <div class="res-info">
+                            <div>
+                                <p>Tip Amount</p>
+                                <p class="person">/ person</p>
+                            </div>
+                            <h3>$0.00</h3>
                         </div>
-                        <h3>$0.00</h3>
-                    </div>
-                    
-                    <div>
-                        <div>
-                            <p>Total</p>
-                            <p>/ person</p>
+                        
+                        <div class="res-info">
+                            <div>
+                                <p>Total</p>
+                                <p class="person">/ person</p>
+                            </div>
+                            <h3>$0.00</h3>
                         </div>
-                        <h3>$0.00</h3>
-                    </div>
-                    <button>Reset</button>
+                        <button class="reset">RESET</button>
+                    </div> 
                 </div>
             </div>
         </main> 
