@@ -173,3 +173,25 @@ h3 {
     }
 }
 
+@media screen and (min-width: 700px) {
+    .container {
+        width: unset;
+        margin: unset;
+    }
+
+    .container > div {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        justify-content: space-between;
+    }
+
+    .reset {
+        margin-top: 9rem;
+    }
+
+    .results {
+        height: 25rem;
+        margin: auto 0;
+    }
+}
+
