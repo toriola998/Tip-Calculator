@@ -9,42 +9,48 @@
 </head>
     <body>
         <header>
-            <h3>SPLI <br> TTER</h3>
+            <h2>SPLI <br> TTER</h2>
         </header>
         <main>
-            <label>Bill
-            <input type="number"/>
-
-            <p>Select Tip %</p>
-            <div>
-                <button>5%</button>
-                <button>10%</button>
-                <button> 15%</button>
-                <button>25%</button>
-                <button>50%</button>
-                <button>Custom</button>
-            </div>
+            <div class="container">
+                <div class="bill-select">
+                    <label for="bill">Bill</label><br>
+                    <div>
+                        <span>$</span>
+                        <input type="number" placeholder="0"/>
+                    </div>
             
-            <label>Number of People
-            <input type="number"/>
-
-            
-            <div>
-                <div>
-                    <p>Tip Amount</p>
-                    <p>/ person</p>
+                    <p>Select Tip %</p>
+                    <div>
+                        <button>5%</button>
+                        <button>10%</button>
+                        <button> 15%</button>
+                        <button>25%</button>
+                        <button>50%</button>
+                        <button>Custom</button>
+                    </div>
+                    
+                    <label>Number of People
+                    <input type="number"/>
                 </div>
-                <h3>$0.00</h3>
-            </div>
-            
-            <div>
+                
                 <div>
-                    <p>Total</p>
-                    <p>/ person</p>
+                    <div>
+                        <p>Tip Amount</p>
+                        <p>/ person</p>
+                    </div>
+                    <h3>$0.00</h3>
                 </div>
-                <h3>$0.00</h3>
+                
+                <div>
+                    <div>
+                        <p>Total</p>
+                        <p>/ person</p>
+                    </div>
+                    <h3>$0.00</h3>
+                </div>
+                <button>Reset</button>
             </div>
-            <button>Reset</button>
         </main> 
     </body>
 </html>
