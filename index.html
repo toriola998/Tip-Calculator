@@ -19,7 +19,7 @@
                         <label for="bill">Bill</label><br>
                         <div class="input-wrap flex">
                             <span id="dollar">$</span>
-                            <input type="text" placeholder="0"/>
+                            <input type="number" placeholder="0" class="bill"/>
                         </div>
                 
                         <p id="select">Select Tip %</p>
@@ -29,13 +29,13 @@
                             <button class="btn"> 15%</button>
                             <button class="btn">25%</button>
                             <button class="btn">50%</button>
-                            <input type="text" class="custom" placeholder="Custom"/>
+                            <input type="number" class="custom" placeholder="Custom"/>
                         </div>
                         
                         <label for="number-of-people">Number of People</label><br>
                         <div class="input-wrap flex">
                             <img src="./images/icon-person.svg" alt="people"/>
-                            <input type="number" placeholder="0"/>
+                            <input type="number" placeholder="0" class="bill number-of-people"/>
                         </div>  
                     </div>
                     
@@ -45,7 +45,7 @@
                                 <p>Tip Amount</p>
                                 <p class="person">/ person</p>
                             </div>
-                            <h3>$0.00</h3>
+                            <h3 class="tip-amount">$0.00</h3>
                         </div>
                         
                         <div class="res-info">
@@ -53,12 +53,13 @@
                                 <p>Total</p>
                                 <p class="person">/ person</p>
                             </div>
-                            <h3>$0.00</h3>
+                            <h3 class="total-per-person">$0.00</h3>
                         </div>
                         <button class="reset" disabled>RESET</button>
                     </div> 
                 </div>
             </div>
-        </main> 
+        </main>
+        <script src="./main.js"></script> 
     </body>
 </html>
