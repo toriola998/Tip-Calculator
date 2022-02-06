@@ -11,6 +11,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
+### Live Url
+https://tip-calcul.netlify.app/
 
