@@ -41,7 +41,7 @@ function tipCalculation (num){
     let totalBillPlusTip = totalTip + bill;
     console.log(totalBillPlusTip)
     
-    noOfPerson.addEventListener('input', () => { 
+    noOfPerson.addEventListener('input', (e) => { 
 
      if(noOfPerson.value != '' || noOfPerson.value != 0 ){
         amountPerPerson.textContent = `$${totalBillPlusTip / parseInt(noOfPerson.value)}`
