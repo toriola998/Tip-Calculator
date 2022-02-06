@@ -42,12 +42,25 @@ function tipCalculation (num){
     console.log(totalBillPlusTip)
     
     noOfPerson.addEventListener('input', () => { 
-    if(noOfPerson.value != '' || noOfPerson.value != 0 ){
-        amountPerPerson.textContent = `$${totalBillPlusTip / parseInt(noOfPerson.value)}`
-    }else {
-        amountPerPerson.textContent = `$0.00` 
-    }
 
-    tipAmountPerPerson.textContent = `$${totalTip / parseInt(noOfPerson.value)}`
+     if(noOfPerson.value != '' || noOfPerson.value != 0 ){
+        amountPerPerson.textContent = `$${totalBillPlusTip / parseInt(noOfPerson.value)}`
+        tipAmountPerPerson.textContent = `$${totalTip / parseInt(noOfPerson.value)}`
+    }else if (e.target.value == 0){
+        //noOfPerson.parentElement.classList.add('error')
+        amountPerPerson.textContent = `$0.00`
+        tipAmountPerPerson.textContent = `$0.00`
+        console.log('hiiiiii')
+    }
     })
 }
+
+//RESET ALL INPUT WHEN THE RESET BUTTON IS CLICKED
+resetBtn.addEventListener('click', () => {
+    billAmount.value = '';
+    noOfPerson.value = '';
+    customTip.value = ''
+    tipAmountPerPerson.textContent = `$0.00`
+    amountPerPerson.textContent = `$0.00`
+    //console.log('rreddddddd')
+})

@@ -43,6 +43,11 @@ h2 {
     margin-right: 2rem;
 }
 
+.custom:focus-within,
+.input-wrap:focus-within {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
 .container {
     background-color: white;
     border-radius: 20px;
@@ -106,9 +111,14 @@ label,
     font-size: 1.3rem;
 }
 
+.error {
+    border: 2px solid red;
+}
+
 .custom {
     background-color: hsl(185, 41%, 84%);
     text-align: center;
+    border-radius: 5px;
 }
 
 /*PLACEHOLDER STYLING FOR CUSTOM INPUT*/
@@ -163,7 +173,7 @@ h3 {
 }
 
 .reset:hover {
-    background-color: hsl(185, 41%, 84%)5;
+    background-color: hsl(185, 41%, 84%);
 }
 
 /* Chrome, Safari, Edge, Opera */
